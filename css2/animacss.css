@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&family=Patrick+Hand&family=Tapestry&display=swap');
+
+header{
+    grid-area: header;
+    background-image: url("../imagens/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+
+}
+h1{
+    font-size: 18px;
+}
+
+
+body{
+    background-image:url('../imagens/benny.webp') ;
+    display: grid;
+    font-family:"Patrick Hand","Old Standard TT","italic" ;
+    margin: 50px;
+    grid-template-areas: 
+    "cor"
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+}
+.cor{
+    background-color: white;
+    grid-area: cor;
+
+}
+
+nav{ 
+    grid-area: nav;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+nav ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    margin-left: -30px;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+footer{
+    grid-area: footer;
+    background-image: url("../imagens/banner2.jpg");
+    display: flex;
+    justify-content: center;
+}
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.stars{
+    margin-right: 500px;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+    animation: anim-stars 20s linear infinite;
+    position: relative;
+	width: 3px;
+	height: 3px;
+
+
+}
+.stars::after{
+    content: " ";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+      100px 80px white,
+      80px 120px white,
+      300px 20px white,
+      250px 130px white,
+      200px 50px white,
+      150px 100px white,
+      320px 100px white;
+      content: " ";
+      position: absolute;
+      top: 150px;
+      width: 3px;
+  }
+  
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
+
+.container{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(0, #120c56, #000000);
+  }
+
+  .stars2{
+    position: relative;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+      125px 35px white,
+      50px 80px white,
+      10px 120px white,
+      275px 90px white,
+      230px 10px white,
+      120px 130px white,
+      300px 130px white,
+      220px 115px white;
+    animation: anim-stars 20s linear infinite;
+  }
+  
+  .stars2::after{
+    content: " ";
+    position: absolute;
+    top: 150px;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+      125px 35px white,
+      50px 80px white,
+      10px 120px white,
+      275px 90px white,
+      230px 10px white,
+      120px 130px white,
+      300px 130px white,
+      220px 115px white;
+  }
+  
+  
+
