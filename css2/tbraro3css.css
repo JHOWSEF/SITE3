@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&family=Patrick+Hand&family=Tapestry&display=swap');
+
+header{
+    grid-area: header;
+    background-image: url("../imagens/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+
+}
+
+body{
+    background-image:url('../imagens/benny.webp') ;
+    display: grid;
+    font-family:"Patrick Hand","Old Standard TT","italic" ;
+    margin: 50px;
+    width: auto;
+    grid-template-areas: 
+    "cor"
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+}
+.cor{
+    background-color: white;
+    grid-area: cor;
+    width: auto;
+
+}
+
+nav{ 
+    grid-area: nav;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+nav ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    margin-left: -30px;
+    justify-content: space-around;
+    
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+main{
+    grid-area: main;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    
+}
+   
+
+
+
+main img{
+    width: 400px;
+    height: 300px;
+}
+main iframe{
+    margin-top: 10px;
+    width: 400px;
+    height: 299px;
+}
+footer{
+    grid-area: footer;
+    background-image: url("../imagens/banner2.jpg");
+    display: flex;
+    justify-content: center;
+}
+
+
+.b{
+    animation-duration: 5s;
+    animation-name: ani;
+}
+  @keyframes ani{
+    from{
+      margin-left: 500%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 62%;
+      width: 100%;
+    }
+  }
