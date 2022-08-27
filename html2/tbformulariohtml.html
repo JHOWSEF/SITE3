@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <title>TRABALHO FORMULÁRIO</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css2/tbformulariocss.css">
+
+</head>
+
+<body>
+    
+   <div class="cor">
+
+  
+<header>
+ 
+    <a href="../html2/tb3.html">
+        <div class="logo">
+        <img src="../imagens/logo3.png" alt="imagem"
+        width="100" height="60"> </div>
+     </a>
+    
+</header>
+
+<nav id="header">
+    <h1 class="logo">Menu----></h1>
+                <ul>
+                        <li><a href="../html2/tb3.html">PRINCIPAL</a></li>
+                        <li><a href="../html2/sport.html">ESPORTIVOS</a></li>
+                        <li><a href="../html2/tb3raro.html">RAROS</a></li>
+                        <li><a href="../html2/classicsite.html">CLASSIC</a></li>
+                        <li><a href="../html2/tbformulariohtml.html">CONHEÇA-NOS</a></li>
+                        <li><a href="../html2/animahtml.html">ANIMAÇÃO</a></li>
+                </ul>
+                <div class="nav_icon" >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+
+                </div>
+</nav>
+
+<main>
+    <div class="descrição">
+    <img src="../imagens/lugar.jpg" alt="imagem" >
+
+        <p><b>SOBRE NÓS</b><br><b>Loja fundada em 2007 com o objetivo de mostrar e informar aqueles que apreciam carros como nós , na loja oferecemos veiculos de diversos gostos e preferencias de antigos classicos a esportivos recentes , mas claro tudo com o intuito de agradar o cliente . Na parte inferior da loja temos um formulário para preencher , aqueles que preencherem receberão emails sobre novos veiculos que chegarão a loja e tambem descontos surpresa.</b></p>
+
+    </div>
+
+    <div>
+        <h1 id="titulo">Cadastro da loja</h1>
+    </div>
+        <form class="form1" method="post">
+            <fieldset>
+                <legend>Etapa 1:</legend>
+                    <label for="nome"><b>Nome:</b></label>
+                    <br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu Nome Completo"><br>
+
+
+                    <label for="cpf"><b>CPF:</b></label>
+                    <br>
+                    <input type="text" id="cpf"  name="cpf" placeholder="Digite seu CPF"><br>
+
+
+                    <label for="senha"><b>CRIE UMA SENHA COM 8 NÚMEROS:</b></label>
+                    <br>
+                    <input type="password" id="senha" placeholder="EX:00000000"><br>
+
+
+                    <label for="senhac"><b>CONFIRME A SENHA:</b></label>
+                    <br>
+                    <input type="password" id="senhac" placeholder="EX:00000000"><br>
+
+
+                    <input type="button" id="button1" value="Enviar"><br>
+                    <div id="erro"></div>
+
+                    </fieldset>
+
+           </form>
+
+
+
+        <form class="form2" method="post">
+              <fieldset>
+                    <legend>Etapa 2:</legend>
+                    <label for="pf"><b>PROFISSÃO:</b></label>
+                    <br>
+                    <input type="text" id="pf" placeholder="SUA PROFISSÃO"> <br> 
+
+                    <label for="estado"><b>Estado:</b></label>
+                    <br>
+                    <input type="radio" id="estado" name="estado" value="RS"/>RS
+                    <input type="radio" id="estado2" name="estado" value="SC"/>SC
+                    <input type="radio" id="estado3" name="estado" value="PR"/>PR <br>
+
+                    <label for="ae"><b>Anos de Experiencia:</b></label>
+                    <br>
+                    <input type="Number" id="ae" placeholder="ENTRE 0-50"> <br> 
+                
+                    <input type = "button" id="button2" value = "Enviar"><br>
+
+                    <div id="erro2"></div>
+
+                </fieldset>
+                
+           </form>
+
+
+                <p class="fase3">
+                </p>
+
+           
+
+  <div>
+    <h1 id="titulo2">Acessos da Loja</h1>
+    </div>
+ <div class="tabela">
+    <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th colspan="2">Acessos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3">Meses</td>
+                </tr>
+                <tr>
+                    <td>SETEMBRO</td>
+                    <td>832</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>OUTUBRO</td>
+                    <td>1438</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>NOVEMBRO</td>
+                    <td>4389</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>METAS</td>
+                    <td>8000</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+            </table>
+        </div>
+
+</main>
+
+
+<div class="b">
+    <img src="../imagens/animação.png" alt="animação">
+</div>
+<footer>
+    <div class="insta">
+    <img src="../imagens/instagram.png" alt="instagram"></div>
+<p>@classicars</p>
+    
+</footer>
+<script src="../tbformulariojs.js"></script>
+
+</div>
+</body>
+
+</html>
