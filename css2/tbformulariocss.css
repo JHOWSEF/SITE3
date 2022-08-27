@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&family=Patrick+Hand&family=Tapestry&display=swap');
+
+header{
+    grid-area: header;
+    background-image: url("../imagens/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+
+}
+
+body{
+    background-image:url('../imagens/benny.webp') ;
+    display: grid;
+    font-family:"Patrick Hand","Old Standard TT","italic" ;
+    margin: 50px;
+    width: auto;
+    grid-template-areas: 
+    "cor"
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+}
+.cor{
+    background-color: white;
+    grid-area: cor;
+    width: auto;
+    border: 2px solid black;
+
+}
+
+
+main{
+    grid-area: main;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+}
+   
+main img{
+    height: auto;
+    width: 400px;
+    margin-top: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+@media (min-width: 740px) {
+    .descrição{
+        align-items: center;
+        grid-area: main;
+        display: flex;
+    }
+}
+.descrição{
+    margin-top: 20px;
+    border: 1px solid black;
+}
+p{
+    text-decoration: underline;
+}
+
+.insta{
+    margin: 15px;
+    width: 10px;
+    height: 10px;
+}
+footer img{
+    width: 20px;
+    height: 20px;
+}
+
+footer{
+    grid-area: footer;
+    background-image: url("../imagens/banner2.jpg");
+    display: flex;
+    justify-content: center;
+}
+
+
+fieldset{
+    height: auto;
+    width: 400px;
+    padding: 5px;
+    background-image: url(../imagens/banner2.jpg);
+    color: azure;
+
+}
+
+
+
+legend{
+    background-image: url(../imagens/banner2.jpg);
+    border: 2px solid black;
+}
+
+#titulo {
+    color: black;
+    text-decoration: underline;
+} 
+#titulo2 {
+    color: black;
+    text-decoration: underline;
+} 
+
+
+table{
+    border: 1px solid rgb(0, 0, 0);
+      height: 335px;
+      width: 400px;
+      padding: 5px;
+      margin-bottom: 5px;
+      color: azure;
+      background-image: url(../imagens/banner2.jpg);
+  }
+  th,td{
+    border: 2px solid black; 
+  }
+
+
+.b{
+    animation-duration: 5s;
+    animation-name: ani;
+}
+  @keyframes ani{
+    from{
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+  a {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+nav {
+    
+    grid-area: nav;
+	height: 80px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+h1 {
+	color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-right: auto;
+	font-size: 23px;
+}
+h2 {
+	color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: auto;
+	font-size: 25px;
+}
+h3 {
+	color: rgb(255, 255, 255);
+    margin-left: 3px;
+    margin-right: auto;
+	font-size: 15px;
+}
+
+ul {
+	display: flex;
+    list-style: none;
+}
+
+ul li a {
+    color: rgb(0, 0, 0);
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav_icon,
+.nav_icon span {
+    display: none;
+}
+
+.nav_icon {
+    margin-top: 20px;
+    width: 36px;
+    height: 28px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_icon span {
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+}
+
+
+.nav_icon span:nth-of-type(2) {
+    transform: rotate(0deg);
+
+}
+
+.nav_icon span:nth-of-type(3) {
+    transform: rotate(-90deg);
+
+}
+
+
+.nav_icon.active span:nth-of-type(1) {
+    transform: rotate(-45deg);
+}
+
+.nav_icon.active span:nth-of-type(2) {
+
+    transform: rotate(45deg);
+
+}
+
+.nav_icon.active span:nth-of-type(3) {
+    transform: rotate(45deg);
+}
+
+@media (max-width: 1850px) {
+    header {
+        position: relative;
+        z-index: 999;
+    }
+    ul{
+        display:none;
+    }
+
+
+	nav.active ul {	
+        display: flex;	
+        flex-direction: column;
+        font-family:"Patrick Hand","Old Standard TT","italic" ;
+        justify-content: center;
+        border: 1px solid black;
+		background: white;
+        border-radius: 5px;
+        position: absolute;
+        top: 230px;
+        left: 50px;
+        width: 60%;
+        z-index: 980;
+    }
+
+    ul li {
+        padding: 10px;
+        text-align: center;
+    }
+    ul li a {
+		display: block;
+        padding: 20px;
+    }
+    ul li a:hover {
+        color: #000;
+        transition: 3s;
+        animation: changeColor 2s infinite;
+    }
+    @keyframes changeColor {
+        0%   {background-color: rgb(149, 16, 16);}
+        15%  {background-color: rgb(193, 216, 13)}
+        25%  {background-color: rgb(19, 161, 97)}
+        50%  {background-color: rgb(94, 69, 202);}
+        75% {background-color: rgb(167, 14, 131);}
+        100%  {background-color: rgb(111, 30, 115)}
+
+      }
+    .nav_icon,
+    .nav_icon span {
+        display: inline-block;
+        transition: all .1s;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+}
+::selection{
+    color: rgb(25, 107, 145);
+}
+
+.form2{
+    display: none;
+}
+.form2_ativo{
+    display: block;
+}
+.form1{
+    display: block;
+}
+.form1_ativo{
+    display: none;
+}
+.fase3{
+    display: none;
+}
+.fase3_ativo{
+    display: block;
+}
